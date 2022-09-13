@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Tip calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <header class="top-logo"><img src="./images/logo.svg" alt="logo" /></header>
+    <main class="main">
+      <section class="input-section">
+        <h1 class="section1-heading1">Bill</h1>
+        <input type="text" class="bill" name="bill" />
+        <h2 class="section1-heading2">Select Tip %</h2>
+        <div class="two-col-grid">
+          <button class="tip-buttons" type="button" id="button1">5%</button>
+          <button class="tip-buttons" type="button" id="button2">10%</button>
+          <button class="tip-buttons" type="button" id="button3">15%</button>
+          <button class="tip-buttons" type="button" id="button4">25%</button>
+          <button class="tip-buttons" type="button" id="button5">50%</button>
+          <input
+            class="custom-tip-input"
+            type="text"
+            name="cutomTip"
+            placeholder="Custom"
+          />
+        </div>
+
+        <h3 class="section1-heading3">Number of People</h3>
+        <input class="no-of-people" type="text" name="noOfPeople" />
+      </section>
+      <section class="output-section">
+        <h1 class="section2-heading1">Tip Amount</h1>
+        <div class="tip-amount">$0.00</div>
+        <h2 class="section2-heading2">Total</h2>
+        <div class="total-tip">$0.00</div>
+        <button class="reset" type="reset">Reset</button>
+      </section>
+    </main>
+  </body>
+</html>
